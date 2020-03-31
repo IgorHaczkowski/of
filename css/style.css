@@ -393,7 +393,7 @@ span {
 
 @media (max-width:840px) {
     .media:hover {
-        left: -120;
+        left: -120px;
     }
 
 
@@ -423,7 +423,7 @@ span {
     }
 
     .media:hover {
-        left: -116;
+        left: -116px;
     }
 
     .fb {
@@ -452,7 +452,7 @@ span {
     }
 
     .media:hover {
-        left: -110;
+        left: -110px;
     }
 
     .fb {
@@ -508,7 +508,7 @@ span {
     }
 
     .media:hover {
-        left: -110;
+        left: -110px;
     }
 
     .fb {
