@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.bg {
+    background-image: url(../image/tlo2.jpg);
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+p {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-family: 'saira condensed', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+div .text {
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+}
+
+
+@media (max-width:500px) {
+    p {
+        font-size: 50px
+    }
+}

@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BACKGROUND*/
+.bg {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../image/tlo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*CONTAINER*/
+div .container {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 5vh;
+    text-align: center;
+}
+
+/*LOGO*/
+img {
+    width: 1400px;
+    margin-bottom: 3vh;
+    text-align: center;
+    animation: heading;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+/*NAWIGATION*/
+nav ul {
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto;
+    animation: heading;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 50px;
+    transition: all .5s;
+}
+
+nav ul li a {
+    font-size: 54px;
+    font-family: 'saira condensed', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #8F9494;
+    text-shadow: 0 0 10px black;
+    transition: all .5s;
+}
+
+nav ul li:hover {
+    transform: scale(1.4);
+    color: white;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/*ANIMATIONS*/
+@keyframes heading {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/*SOCIAL MEDIA ICONS*/
+.media {
+    display: inline-block;
+    color: white;
+    font-family: 'saira condensed', sans serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: left;
+    border-radius: 0 10px 10px 0;
+    line-height: 60px;
+    text-align: center;
+    width: 180px;
+    margin: 0;
+    padding: 0 60px 0 20px;
+    position: fixed;
+    left: -120px;
+    transition: 0.5s;
+    animation: heading;
+    animation-delay: 5s;
+    animation-duration: 3s;
+    animation-fill-mode: backwards;
+}
+
+.fb {
+    background-color: royalblue;
+    top: 100px;
+}
+
+.yt {
+    background-color: red;
+    top: 162px;
+}
+
+.bc {
+    background-color: black;
+    top: 223px;
+}
+
+.media:hover {
+    left: 0;
+}
+
+.mfont a {
+    color: white;
+    text-decoration: none;
+}
+
+.mfont a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+p.mfont {
+    text-align: center;
+}
+
+span {
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+    text-align: center;
+    line-height: 60px;
+}
+
+/* MEDIA QUERIES FOR NAVIGATION 
+-----DESKTOP----------*/
+@media (max-width:1600px) {
+    nav ul li a {
+        font-size: 44px;
+    }
+
+    img {
+        width: 1280px;
+        margin-bottom: 7vh;
+    }
+
+}
+
+@media (max-width:1280px) {
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    nav ul li a:hover {
+        transform: scale(1.2);
+    }
+
+    img {
+        width: 1120px;
+        margin-bottom: 12vh;
+    }
+
+}
+
+@media (max-width:1120px) {
+    nav ul li a {
+        font-size: 36px;
+    }
+
+    img {
+        width: 940px;
+        margin-bottom: 20vh;
+    }
+}
+
+/*--------MOBiLE-----*/
+
+
+@media (orientation: portrait) and (max-width:1024px) {
+    div .container {
+        bottom: 18vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width:940px) {
+    nav ul li {
+        display: block;
+        transform: none;
+    }
+
+    nav ul li a {
+        font-size: 48px;
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    div .container {
+        bottom: 20vh;
+    }
+
+}
+
+@media (orientation: portrait) and (max-width:840px) {
+
+    nav ul li:hover {
+        transform: none;
+    }
+
+    nav ul li {
+        color: white;
+    }
+}
+
+@media (orientation: portrait) and (max-width:768px) {
+    img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    div .container {
+        bottom: 14vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width:600px) {
+    nav ul li a {
+        font-size: 40px;
+    }
+}
+
+@media (orientation: portrait) and (max-width:420px) {
+    img {
+        margin-bottom: 3vh;
+    }
+
+    nav ul li a {
+        font-size: 34px;
+        line-height: 1.8;
+    }
+
+    div .container {
+        bottom: 20vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width:360px) {
+    img {
+        margin-bottom: 3vh;
+    }
+
+    nav ul li a {
+        font-size: 32px;
+        line-height: 1.6;
+    }
+
+    div .container {
+        bottom: 20vh;
+    }
+}
+
+@media (orientation: portrait) and (max-width:320px) {
+    nav ul li a {
+        font-size: 28px;
+    }
+
+    div .container {
+        bottom: 14vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width:1366px) {
+
+    div .container {
+        bottom: 10vh;
+    }
+}
+
+@media (orientation: landscape) and (max-width:1024px) {
+
+    img {
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width:940px) {
+
+    img {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: 36px;
+        color: white;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li:hover {
+        transform: none;
+    }
+}
+
+@media (orientation: landscape) and (max-width:840px) {
+    div .container {
+        bottom: 5vh;
+    }
+
+    img {
+        width: 740px;
+        margin-bottom: 6vh;
+    }
+
+    nav ul li a {
+        font-size: 32px;
+    }
+}
+
+@media (orientation: landscape) and (max-width:740px) {
+    nav ul li a {
+        font-size: 26px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    img {
+        width: 640px;
+        margin-bottom: 4vh;
+    }
+
+}
+
+@media (orientation: landscape) and (max-width:640px) {
+    nav ul li a {
+        font-size: 22px;
+    }
+
+    img {
+        width: 540px;
+    }
+
+
+
+}
+
+@media (orientation: landscape) and (max-width:500px) {
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+    }
+
+    img {
+        width: 400px;
+    }
+}
+
+/* MEDIA QUERIES FOR SOCIAL MEDIA ICONS */
+
+@media (max-width:840px) {
+    .media:hover {
+        left: -120;
+    }
+
+
+    .fb {
+        background-color: royalblue;
+        top: 20px;
+    }
+
+    .yt {
+        background-color: red;
+        top: 82px;
+    }
+
+    .bc {
+        background-color: black;
+        top: 144px;
+    }
+
+}
+
+@media (orientation:portrait) and (max-width:700px) {
+
+    div .media {
+        transform: scale(0.8);
+        left: -116px;
+
+    }
+
+    .media:hover {
+        left: -116;
+    }
+
+    .fb {
+        background-color: royalblue;
+        top: 20px;
+    }
+
+    .yt {
+        background-color: red;
+        top: 70px;
+    }
+
+    .bc {
+        background-color: black;
+        top: 120px;
+    }
+
+}
+
+
+@media (orientation:portrait) and (max-width:330px) {
+
+    div.media {
+        transform: scale(0.7);
+        left: -110px;
+    }
+
+    .media:hover {
+        left: -110;
+    }
+
+    .fb {
+        background-color: royalblue;
+        top: 10px;
+    }
+
+    .yt {
+        background-color: red;
+        top: 54px;
+    }
+
+    .bc {
+        background-color: black;
+        top: 98px;
+    }
+
+}
+
+
+@media (orientation: landscape) and (max-width:880px) {
+
+    div.media {
+        transform: scale(0.8);
+        left: -116px;
+    }
+
+    .media:hover {
+        left: -116px;
+    }
+
+    .fb {
+        background-color: royalblue;
+        top: 20px;
+    }
+
+    .yt {
+        background-color: red;
+        top: 70px;
+    }
+
+    .bc {
+        background-color: black;
+        top: 120px;
+    }
+}
+
+@media (orientation: landscape) and (max-width:640px) {
+
+    div.media {
+        transform: scale(0.7);
+        left: -110px;
+    }
+
+    .media:hover {
+        left: -110;
+    }
+
+    .fb {
+        background-color: royalblue;
+        top: 10px;
+    }
+
+    .yt {
+        background-color: red;
+        top: 54px;
+    }
+
+    .bc {
+        background-color: black;
+        top: 98px;
+    }
+}
+
+/*
+
+*/
